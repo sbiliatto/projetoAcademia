@@ -329,6 +329,14 @@ button:hover,
   margin: 40px 0 20px 0;
 }
 
+.dashboard{
+  display: block;
+}
+
+.tabela-aulas .editar{
+  text-align: right;
+}
+
 .tabela-aulas {
   width: 100%;
   border-collapse: collapse;
@@ -432,42 +440,34 @@ footer a:hover { text-decoration: underline; }
   margin-top: 20px;
 }
 
+.redes-sociais img { height: 32px; width: 32px; object-fit: contain; }
 
 
-/* Esconde o hamburguer no desktop */
-.hamburguer {
-    display: none;
-    font-size: 30px;
-    cursor: pointer;
-    margin-right: 20px;
+/* =========================================================
+   Responsiveness
+   ========================================================= */
+@media (max-width: 1024px) {
+  main { flex-direction: column; gap: 32px; padding: 32px 20px; }
+  .container { flex-direction: column; padding: 40px 20px; }
+  header { padding: 8px 20px; }
 }
 
-/* Menu padrão (desktop) */
-.nave {
-    display: flex;
-    gap: 20px;
-}
-
-/* Responsivo */
 @media (max-width: 768px) {
-    .nave {
-        display: none; /* esconde menu no mobile */
-        flex-direction: column;
-        background: #6381A8; /* cor do menu aberto */
-        position: absolute;
-        top: 70px; /* altura do header */
-        right: 0;
-        width: 200px;
-        padding: 15px;
-        border-radius: 10px;
-    }
+  header nav { gap: 20px; }
+  .text-container p { font-size: 36px; }
+  .tabela-aulas th, .tabela-aulas td { padding: 10px 12px; }
+  .conteudo-rodape { padding: 0; }
+}
 
-    .nave a {
-        color: white;
-        margin: 10px 0;
-    }
+@media (max-width: 480px) {
+  header { padding: 6px 16px; }
+  header .logo img { width: 56px; }
+  .text-container p { font-size: 28px; }
+  input, button { font-size: 14px; padding: 10px 14px; }
+  .redes-sociais img { height: 24px; width: 24px; }
+}
 
-    .hamburguer {
-        display: block; /* aparece só no celular */
-    }
+@media (max-width: 360px) {
+  .text-container p { font-size: 24px; }
+  .tabela-aulas th, .tabela-aulas td { padding: 8px 10px; }
 }
