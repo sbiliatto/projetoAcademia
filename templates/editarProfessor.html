@@ -4,43 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editar Professor</title>
-    <link rel="stylesheet" href=  "../static/style.css">
+    <link rel="stylesheet" href="../static/style.css">
 </head>
 <body>
     
   <!-- HEADER -->
   <header>
     <div class="logo">
-      <img src="img/logo-ascender.jpg" alt="Ascender Logo">
+        <img src="../img/logo-ascender.jpg" alt="Ascender Logo">
     </div>
     <nav>
+<<<<<<< HEAD
       <a href="home.html">Sobre</a>
       <a href="dashbord_adm.html">Painel</a>
+=======
+      <a href="homesemnada.html">Sobre</a>
+      <a href="dashboardadm.html">Painel</a>
+>>>>>>> 9d2f55f52f57de743e451bbeb548b098c192e3f3
     </nav>
-    <div class="perfil">
-      <img src="img/perfil.png" alt="Usuário">
     </div>
   </header>
 
   <!-- MAIN -->
   <main >
     <section class="intro">
-      <h2>Editar o perfil</h2>
     </section>
 
     <section class="cadastro-prof">
-      <h2>cadastro</h2>
+      <h2> Editar o perfil do Professor</h2>
       <form>
-        <input type="nome" placeholder="Insira seu nome" required>
-        <input type="text" placeholder="Insira seu CPF" required>
+        <input type="nome" placeholder="Insira o nome" required>
+        <input type="text" placeholder="Insira o CPF" required>
+        <input type="telefone" placeholder="Insira o telefone" required>
         <input type="text" placeholder="Modalidade" required>
-        <input type="telefone" placeholder="Insira seu telefone" required>
-        <button type="submit">Concluído</button>
+        
+        
 
         <div class="buttons">
-                    <button type="submit" class="save-btn">Salvar</button>
-                    <button type="button" class="delete-btn">Excluir</button>
-                </div>
+          <button type="submit" class="save-btn">Salvar</button>
+          <button type="button" class="delete-btn">Excluir</button>
+        </div>
+        <button type="submit" href="dashboardadm.html">Cancelar</button>
       </form>
     </section>
     <p>
@@ -49,27 +53,36 @@
         necessário.
     </p>
   </main>
+<<<<<<< HEAD
 <footer style="max-width: 100%;" class="rodape">
     <div class="conteudo-rodape">
         <div class="coluna-esquerda">
             <h3 style="font-size: 30px;">ASCENDER</h3>
             <p style="font-size: 15px;"><a href="home.html">SOBRE NÓS</a></p>
+=======
+>>>>>>> 9d2f55f52f57de743e451bbeb548b098c192e3f3
 
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-left">
+      <h3>ASCENDER</h3>
+      <ul>
+        <li><a href="homesemnada.html">Sobre nós</a></li>
+      </ul>
             <div class="redes-sociais">
-                <img src="img/TAG-removebg-preview.png" alt="Instagram">
-                <img src="img/TAG__1_-removebg-preview.png" alt="Facebook">
-                <img src="img/TAG__2_-removebg-preview.png" alt="Twitter/X">
+                <img src="../img/instagram.png" alt="Instagram">
+                <img src="../img/facebook.png" alt="Facebook">
+                <img src="../img/twitter.png" alt="Twitter/X">
             </div>
-        </div>
-
-        <div class="coluna-direita">
-            <p style="font-size: 20px;">Rua das Acácias, 123</p>
-            <p style="font-size: 20px;">Bairro Jardim Primavera</p>
-            <p style="font-size: 20px;">São Paulo - SP</p>
-            <p style="font-size: 20px;">CEP: 01234-567</p>
-        </div>
     </div>
-</footer>
+
+    <div class="footer-right">
+      <p>Rua das Acácias, 123 <br>
+         Bairro Jardim Primavera <br>
+         São Paulo - SP <br>
+         CEP: 01234-567</p>
+    </div>
+  </footer>
 
 
     
