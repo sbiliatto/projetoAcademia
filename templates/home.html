@@ -11,18 +11,27 @@
 </head>
 <body>
     
+<header class="cabeca">
+    
+    <!-- Botão hamburguer -->
+    <div class="hamburguer" onclick="toggleMenu()">
+        ☰
+    </div>
 
-    <header class="cabeca">
-        <img src="../img/logo-ascender.jpg" alt="Ascender Logo">
-        <nav class="nave">
-            <a style="font-size: 20px;" class="sobreepai" href="home2.html">Sobre</a>
-            <a style="font-size: 20px;" class="sobreepai" href="dashboard.html">Painel</a>
-        </nav>
+    <nav class="nave" id="menu">
+        <a style="font-size: 20px;" class="sobreepai" href="home.html">Sobre</a>
+        <a style="font-size: 20px;" class="sobreepai" href="dashboard.html">Painel</a>
+    </nav>
 
-        <div class="log">
-            <a class="loginbo" href="login.html"><button>LOGIN</button></a>
-        </div>
-    </header>
+    <div class="log">
+        <a class="loginbo" href="login.html"><button>LOGIN</button></a>
+    </div>
+</header>
+
+    <img class="navlo" src="../img/logo-ascender.jpg" alt="logo da Ascender">
+
+
+
 
     <main>
         <section class="quemse">
@@ -44,7 +53,7 @@
 
         <section class="acade">
 
-            <img class="acadeimg" src="img/acade com névoa.png" alt="homem levantando peso na academia">
+            <img class="acadeimg" src="../img/acade com névoa.png" alt="homem levantando peso na academia">
         
         <div class="sobre">
             <h3 style="font-size: 45px;">A academia perfeita para quem busca resultados de verdade.</h3>
@@ -94,3 +103,11 @@
     </div>
 </footer>
 </body>
+        <script>
+    function toggleMenu() {
+        const menu = document.getElementById("menu");
+        menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
+    }
+</script>
+
+</html>
