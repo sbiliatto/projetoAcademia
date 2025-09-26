@@ -121,7 +121,8 @@ main.dashboard {
   margin: 0 auto;
   padding: 75px 24px;
   display: flex;
-  gap: 60px;
+  gap: 200px;
+  align-items: center;
 }
 
 .intro{
@@ -277,9 +278,10 @@ button:hover,
 }
 
 .text-container p {
-  font-size: 50px;
-  line-height: 1.3;
-  color: var(--azul-700);
+    font-size: 39px;
+    line-height: 1.3;
+    color: #6381A8;
+    font-weight: bold;
 }
 
 /* =========================================================
