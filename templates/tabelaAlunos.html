@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Painel - Tabela de Aulas</title>
-  <link rel="stylesheet" href=  "../static/style.css">
-  <!-- Google Fonts -->
+  <link rel="stylesheet" href="../static/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Header -->
+
+  <!-- ===== HEADER ===== -->
   <header>
     <div class="logo">
       <img src="../img/logo-ascender.jpg" alt="Ascender Logo">
@@ -23,17 +23,18 @@
     </div>
   </header>
 
-  <!-- Conteúdo -->
+  <!-- ===== MAIN ===== -->
   <main class="dashboard">
     <h2 class="titulo-tabela">TABELA DE ALUNOS</h2>
 
     <table class="tabela-aulas">
       <thead>
         <tr>
-         <th>Nome</th>
-         <th>Email</th>
-         <th>Telefone</th>
-         <th>CPF</th>
+          <th>Nome</th>
+          <th>Email</th>
+          <th>Telefone</th>
+          <th>CPF</th>
+          <th>Ação</th>
         </tr>
       </thead>
       <tbody>
@@ -42,47 +43,48 @@
           <td>carlinho@gmail.com</td>
           <td>(11) 91234-5678</td>
           <td>123.456.789-00</td>
-          <td class="editar"><a href="editarAula.html"><button>Editar</button></a></td>
+          <td class="editar"><a href="editarAula.html">Editar</a></td>
         </tr>
         <tr>
           <td>Maria Souza</td>
           <td>Mariazinha</td>
           <td>(21) 98765-4321</td>
           <td>987.654.321-00</td>
-          <td class="editar"><a href="editarAula.html"><button>Editar</button></a></td>
+          <td class="editar"><a href="editarAula.html">Editar</a></td>
         </tr>
         <tr>
           <td>Ana Costa</td>
           <td>Aninha Costa</td>
           <td>(31) 99876-5432</td>
           <td>456.789.123-00</td>
-          <td class="editar"><a href="editarAula.html"><button>Editar</button></a></td>
+          <td class="editar"><a href="editarAula.html">Editar</a></td>
         </tr>
       </tbody>
     </table>
   </main>
 
-  <!-- Footer -->
-  <footer>
-    <div class="footer-left">
-      <h3>ASCENDER</h3>
-      <ul>
-        <li><a href="home.html">SOBRE NÓS</a></li>
-      </ul>
-            <div class="redes-sociais">
-                <img src="../img/instagram.png" alt="Instagram">
-                <img src="../img/facebook.png" alt="Facebook">
-                <img src="../img/twitter.png" alt="Twitter/X">
-            </div>
-    </div>
-    <div class="footer-right">
-      <p>
-        Rua das Acácias, 123 <br>
-        Bairro Jardim Primavera <br>
-        São Paulo - SP <br>
-        CEP: 01234-567
-      </p>
+  <!-- ===== FOOTER ===== -->
+  <footer class="rodape">
+    <div class="conteudo-rodape">
+      <div class="coluna-esquerda">
+        <h3>ASCENDER</h3>
+        <p><a href="home.html">SOBRE NÓS</a></p>
+        <div class="redes-sociais">
+          <img src="../img/instagram.png" alt="Instagram">
+          <img src="../img/facebook.png" alt="Facebook">
+          <img src="../img/twitter.png" alt="Twitter/X">
+        </div>
+      </div>
+      <div class="coluna-direita">
+        <p>
+          Rua das Acácias, 123 <br>
+          Bairro Jardim Primavera <br>
+          São Paulo - SP <br>
+          CEP: 01234-567
+        </p>
+      </div>
     </div>
   </footer>
+
 </body>
 </html>

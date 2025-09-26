@@ -3,9 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Painel - Tabela de Aulas</title>
-  <link rel="stylesheet" href=  "../static/style.css">
-  <!-- Google Fonts -->
+  <title>Painel - Tabela de Professores</title>
+  <link rel="stylesheet" href="../static/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -34,47 +33,54 @@
            <th>CPF</th>
            <th>Modalidade</th>
            <th>Telefone</th>
+           <th>Ações</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td>João Silva</td>
           <td>123.456.789-00</td>
-          <td>Spininng</td>
+          <td>Spinning</td>
           <td>(11) 91234-5678</td>
-          <td class="editar"><a href="editarAula.html"><button>Editar</button></a></td>
+          <td class="editar">
+            <a href="editarProfessor.html" class="edit-btn">Editar</a>
+          </td>
         </tr>
         <tr>
           <td>Maria Oliveira</td>
           <td>987.654.321-00</td>
           <td>Pilates</td>
           <td>(21) 99876-5432</td>
-          <td class="editar"><a href="editarAula.html"><button>Editar</button></a></td>
+          <td class="editar">
+            <a href="editarProfessor.html" class="edit-btn">Editar</a>
+          </td>
         </tr>
       </tbody>
     </table>
   </main>
 
-  <!-- Footer -->
-  <footer>
-    <div class="footer-left">
-      <h3>ASCENDER</h3>
-      <ul>
-        <li><a href="home.html">SOBRE NÓS</a></li>
-      </ul>
-            <div class="redes-sociais">
-                <img src="../img/instagram.png" alt="Instagram">
-                <img src="../img/facebook.png" alt="Facebook">
-                <img src="../img/twitter.png" alt="Twitter/X">
-            </div>
-    </div>
-    <div class="footer-right">
-      <p>
-        Rua das Acácias, 123 <br>
-        Bairro Jardim Primavera <br>
-        São Paulo - SP <br>
-        CEP: 01234-567
-      </p>
+  <!-- FOOTER -->
+  <footer class="rodape">
+    <div class="conteudo-rodape">
+      
+      <section class="coluna-esquerda">
+        <h3>ASCENDER</h3>
+        <p><a href="home.html">Sobre nós</a></p>
+
+        <div class="redes-sociais">
+          <img src="../img/instagram.png" alt="Instagram">
+          <img src="../img/facebook.png" alt="Facebook">
+          <img src="../img/twitter.png" alt="Twitter/X">
+        </div>
+      </section>
+
+      <section class="coluna-direita">
+        <p>Rua das Acácias, 123</p>
+        <p>Bairro Jardim Primavera</p>
+        <p>São Paulo - SP</p>
+        <p>CEP: 01234-567</p>
+      </section>
+
     </div>
   </footer>
 </body>

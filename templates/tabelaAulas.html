@@ -1,79 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabela de alunos</title>
-
-    <link rel="stylesheet" href=  "../static/style.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabela de aulas - Aluno</title>
+  <link rel="stylesheet" href="../static/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
+  <header>
     <div class="logo">
       <img src="../img/logo-ascender.jpg" alt="Ascender Logo">
     </div>
-    <nav class="menu">
+    <nav>
       <a href="home.html">Sobre</a>
       <a href="dashboardaluno.html">Painel</a>
     </nav>
-    
   </header>
 
-  <!-- Conteúdo -->
-  <main>
-    <h1>TABELA DE AULAS</h1>
-    <table>
+  <main class="dashboard">
+    <h2 class="titulo-tabela">TABELA DE AULAS</h2>
+    <table class="tabela-aulas">
+      <thead>
+        <tr>
+          <th>Modalidade</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
       <tbody>
         <tr>
           <td>Muay-Thay</td>
-          <td><button class="btn-editar"><a href="">Inscrever</a></button></td>
+          <td class="editar"><a href="#" class="btn-editar">Inscrever</a></td>
         </tr>
         <tr>
           <td>Musculação</td>
-          <td><button class="btn-editar">Inscrever</button></td>
+          <td class="editar"><a href="#" class="btn-editar">Inscrever</a></td>
         </tr>
         <tr>
           <td>Spinning</td>
-          <td><button class="btn-editar">Inscrever</button></td>
+          <td class="editar"><a href="#" class="btn-editar">Inscrever</a></td>
         </tr>
         <tr>
           <td>Yoga</td>
-          <td><button class="btn-editar">Inscrever</button></td>
+          <td class="editar"><a href="#" class="btn-editar">Inscrever</a></td>
         </tr>
         <tr>
           <td>Zumba</td>
-          <td><button class="btn-editar">Inscrever</button></td>
+          <td class="editar"><a href="#" class="btn-editar">Inscrever</a></td>
         </tr>
         <tr>
           <td>Natação</td>
-          <td><button class="btn-editar">Inscrever</button></td>
+          <td class="editar"><a href="#" class="btn-editar">Inscrever</a></td>
         </tr>
       </tbody>
     </table>
   </main>
 
-  <!-- Rodapé -->
-  <footer>
+  <!-- FOOTER -->
+  <footer class="rodape">
     <div class="conteudo-rodape">
-      <div class="coluna-esquerda">
+      
+      <section class="coluna-esquerda">
         <h3>ASCENDER</h3>
-        <a href="home.html">SOBRE NÓS</a>
+        <p><a href="home.html">Sobre nós</a></p>
+
         <div class="redes-sociais">
-          <img src="instagram.png" alt="Instagram">
-          <img src="facebook.png" alt="Facebook">
-          <img src="twitter.png" alt="Twitter">
+          <img src="../img/instagram.png" alt="Instagram">
+          <img src="../img/facebook.png" alt="Facebook">
+          <img src="../img/twitter.png" alt="Twitter/X">
         </div>
-      </div>
-      <div class="coluna-direita">
+      </section>
+
+      <section class="coluna-direita">
         <p>Rua das Acácias, 123</p>
         <p>Bairro Jardim Primavera</p>
         <p>São Paulo - SP</p>
         <p>CEP: 01234-567</p>
-      </div>
+      </section>
+
     </div>
   </footer>
 
 </body>
+</html>
