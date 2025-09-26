@@ -32,14 +32,14 @@
     <section class="admcaixa">
       <div class="caixa">
         <!-- Bloco de aulas do aluno -->
-        <div>
+        <div class="exclui">
           <h2>Minhas aulas</h2>
-          <a href="tabelaAlunos.html">+ Inscreva-se</a>
+          <a href="tabelaAulas.html">+ Inscreva-se</a>
 
           <div class="caixa1">
-            <h3>Spinning</h3>
+            <h3 id="spin">Spinning</h3>
             <p>12/09 - 19h</p>
-            <a href="">Excluir inscrição</a>
+            <a onclick="excluir(this)" href="">Excluir inscrição</a>
           </div>
         </div>
       </div>
@@ -51,17 +51,14 @@
     </div>
   </main>
 
+    <script src="../static/script.js"></script>
+</body>
   <!-- ===== FOOTER ===== -->
   <footer class="rodape">
     <div class="conteudo-rodape">
       <div class="coluna-esquerda">
         <h3>ASCENDER</h3>
         <p><a href="home.html">Sobre nós</a></p>
-        <div class="redes-sociais">
-          <img src="../img/instagram.png" alt="Instagram">
-          <img src="../img/facebook.png" alt="Facebook">
-          <img src="../img/twitter.png" alt="Twitter/X">
-        </div>
       </div>
 
       <div class="coluna-direita">
@@ -72,6 +69,5 @@
       </div>
     </div>
   </footer>
-</body>
 
 </html>

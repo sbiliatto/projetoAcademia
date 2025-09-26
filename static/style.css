@@ -13,6 +13,7 @@
 }
 
 :root {
+  /* VARIÁVEL DE COR */
   --azul: #6381A8;
   --azul-600: #506a8a;
   --azul-700: #4a6483;
@@ -24,7 +25,12 @@
   --cinza-700: #777;
   --preto: #1e1e1e;
   --branco: #FFFFFF;
+
+  /* VARIÁVEL DE ESPAÇAMENTO */
+  --img-logo-width: 70px;
+  --img-logo-height: auto;
 }
+
 
 html,
 body {
@@ -39,7 +45,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-
 /* =========================================================
    Header
    ========================================================= */
@@ -64,8 +69,8 @@ header .logo {
 }
 
 header .logo img {
-  width: 70px;
-  height: auto;
+  width: var(--img-logo-width);
+  height: var(--img-logo-height);
 }
 
 header nav {
@@ -244,6 +249,10 @@ button,
   margin-top: 10px;
 }
 
+button a{
+  color: white;
+}
+
 button:hover,
 .button:hover,
 .register-btn:hover,
@@ -277,6 +286,13 @@ button:hover,
   max-width: 420px;
 }
 
+.texto{
+   font-size: 39px;
+  line-height: 1.3;
+  color: #6381A8;
+  font-weight: bold;
+}
+
 .cadastro-aula h2 {
   font-size: 24px;
   margin-bottom: 20px;
@@ -304,10 +320,25 @@ button:hover,
   text-align: center;
 }
 
+.moda2{
+   font-size: 31px;
+  margin-bottom: 12px;
+  color: var(--azul);
+   text-align: start;
+}
+
+.prof2{
+   font-size: 31px;
+  margin-bottom: 12px;
+  color: var(--azul);
+   text-align: start;
+}
+
 .cadastro h2 {
   font-size: 31px;
   margin-bottom: 12px;
   color: var(--azul);
+   text-align: start;
 }
 
 .cadastro form {
@@ -343,7 +374,7 @@ button:hover,
 .dashboard h1 {
   color: #000;
   font-size: 28px;
-  margin-bottom: 18px;
+  margin-top: 220px;
 }
 
 .dashboard section .caixa {
@@ -506,40 +537,6 @@ button:hover,
   background-color: var(--azul-600);
 }
 
-/* =========================================================
-   Modal (alert/overlay)
-   ========================================================= */
-.modal {
-  display: none;
-  position: fixed;
-  inset: 0;
-  z-index: 1000;
-  background: rgba(0, 0, 0, 0.6);
-  align-items: center;
-  justify-content: center;
-}
-
-.modal-content {
-  background: var(--branco);
-  padding: 25px;
-  width: 350px;
-  border-radius: 14px;
-  position: relative;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-}
-
-.close {
-  position: absolute;
-  top: 8px;
-  right: 12px;
-  color: #555;
-  font-size: 22px;
-  cursor: pointer;
-}
-
-.close:hover {
-  color: red;
-}
 
 /* ====== HERO ====== */
 .hero {
@@ -704,7 +701,7 @@ button:hover,
   color: #FFFFFF;
   padding: 40px 0;
   width: 100%;
-  margin-top: 100px;
+  margin-top: 200px;
 }
 
 .conteudo-rodape {
