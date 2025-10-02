@@ -1,24 +1,26 @@
-function confirmarExclusao(nomeAula) {
-            let resposta = confirm(`Tem certeza que deseja excluir sua inscrição na aula de ${nomeAula}?`);
-            
-            if (resposta) {
-                alert(`Inscrição na aula de ${nomeAula} foi excluída com sucesso!`);
-            } else {
-                alert("Exclusão cancelada.");
-            }
-        }
+function excluir(event) {
+    event.preventDefault(); // impede a função padrão do elemento (no caso um link que iria recarregar a página)
 
-function toggleMenu() {
-        const menu = document.getElementById("menu");
-        menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
-    }
-
-
-function excluir(botao) {
     if (confirm("Tem certeza que deseja excluir esta inscrição?")) {
-        botao.parentElement.remove();
+        document.getElementById("caixaa").style.display = "none";
         alert("Inscrição excluída com sucesso!");
     } else {
         alert("Exclusão cancelada.");
     }
 }
+
+function esgotouAula(event) {
+
+    event.preventDefault()
+
+      document.getElementById("meuModal").style.display = "flex";
+    }
+
+    function fecharModal() {
+      document.getElementById("meuModal").style.display = "none";
+    }
+
+
+    
+
+
